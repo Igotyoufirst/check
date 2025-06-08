@@ -1,0 +1,28 @@
+local module = {}
+
+module.IDs = {
+    [292439477] = "d004aba38f23906a0ed1752dac25f568", --pf
+}
+module.ScriptID = module.IDs[game.PlaceId] and module.IDs[game.PlaceId]
+module.api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
+module.api.script_id = module.ScriptID
+
+module.Notify = nil
+
+module.Functions = {
+    CheckKey = function(Key)
+        local status = module.api.check_key(Key)
+
+        if status.code == "KEY_VALID" then
+            script_key = Key
+            return {STATUS=status,API=module.api,KEYSCRIPT=script}
+        else
+            if module.Notify ~= nil then
+                module.Notify("Error",status.message,5)
+            end
+            return {STATUS=status,API=module.api,KEYSCRIPT=script}
+        end
+    end
+}
+
+return module
