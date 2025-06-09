@@ -2,7 +2,7 @@ local module = {}
 
 module.IDs = {
     ["Universal"] = "baf0792f6cce01ba2040d6bf52996eb8", --  Universal | Koronis Hub
-    [292439477] = "d004aba38f23906a0ed1752dac25f568", --  Collect All Pets | Koronis Hub
+    [292439477] = "05130c238850f973860c2b298cb053b7", --  Collect All Pets | Koronis Hub
     [142823291] = "715b720f239e20ee194665e05b77ad6e", -- Murder Mystery 2 | Koronis Hub
     [73801682582529] = "fe3a3d936137408a4f153979276d1416", -- Zombie RNG Lobby | Koronis Hub
     [84759971088447] = "fe3a3d936137408a4f153979276d1416", -- Zombie RNG Game | Koronis Hub
